@@ -1,0 +1,83 @@
+header {
+    height: 70px;
+    width: 100%;
+    background-color: rgb(77, 83, 97);
+    display: flex;
+    position: fixed;
+    z-index: 9999;
+}
+
+.instagramicon{
+    position: absolute;
+    margin-left: 18px;
+    margin-top: 18px;
+    a{
+        text-decoration: none;
+        color: #f5eeee60;
+        font-size: 20px;
+    }
+}
+
+.logocontainer {
+    width: 100px;
+    height: 50px;
+    margin-left: 15%;
+    margin-top: auto;
+    margin-bottom: auto;
+    img{
+        width: 100px;
+        height: auto;
+    }
+}
+.menunav{
+    position: absolute;
+    margin-top: 70px;
+    width: 80%;
+}
+    .menu {
+        display: none;
+        ul{
+            list-style: none;
+            background-color:rgb(255, 255, 255);
+            height: auto;
+            width: 100%;
+            z-index: 1000;
+            padding-top: 20px;
+            padding-right: 20px;
+            padding-bottom: 30px;
+            box-shadow: 0 0 0 100vmax rgb(0, 0, 0, 0.5);
+            li{
+                text-decoration: none;
+                padding: 5px;
+                a{
+                    text-decoration: none;
+                    color: rgb(77, 83, 97);
+                    padding: 25px;
+                    font-size: 15px;
+                    &:hover{
+                        color: rgb(24, 193, 38);
+                    }
+                }
+            }
+        }
+    }
+    .menu.activo{
+        display: block;
+    }
+
+
+
+    .abrir-menu, .cerrar-menu {
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-size: 35px;
+        position: absolute;
+        margin-left: 70%;
+        margin-top: 10px;
+        width: 50px;
+    }
+
+    .cerrar-menu{
+        display: none;
+    }

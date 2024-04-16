@@ -1,0 +1,396 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 70px;
+  width: 100%;
+  background-color: rgb(77, 83, 97);
+  display: flex;
+  position: fixed;
+  z-index: 9999;
+}
+
+.instagramicon {
+  position: absolute;
+  margin-left: 18px;
+  margin-top: 18px;
+}
+.instagramicon a {
+  text-decoration: none;
+  color: rgba(245, 238, 238, 0.3764705882);
+  font-size: 20px;
+}
+
+.logocontainer {
+  width: 100px;
+  height: 50px;
+  margin-left: 15%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.logocontainer img {
+  width: 100px;
+  height: auto;
+}
+
+.menunav {
+  position: absolute;
+  margin-top: 70px;
+  width: 80%;
+}
+
+.menu {
+  display: none;
+}
+.menu ul {
+  list-style: none;
+  background-color: rgb(255, 255, 255);
+  height: auto;
+  width: 100%;
+  z-index: 1000;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+}
+.menu ul li {
+  text-decoration: none;
+  padding: 5px;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: rgb(77, 83, 97);
+  padding: 25px;
+  font-size: 15px;
+}
+.menu ul li a:hover {
+  color: rgb(24, 193, 38);
+}
+
+.menu.activo {
+  display: block;
+}
+
+.abrir-menu, .cerrar-menu {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 35px;
+  position: absolute;
+  margin-left: 70%;
+  margin-top: 10px;
+  width: 50px;
+}
+
+.cerrar-menu {
+  display: none;
+}
+
+.portada {
+  width: 100%;
+  text-align: center;
+}
+.portada img {
+  width: 100%;
+}
+
+.nosotros h2 {
+  border-top: #800000 2px solid;
+  color: rgb(77, 83, 97);
+  margin: auto;
+  margin-top: 25px;
+  padding-top: 25px;
+  width: 50%;
+}
+.nosotros p {
+  padding: 15px;
+}
+
+.nosotrosimg {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+.nosotrosimg img {
+  width: 90%;
+  margin-top: 10px;
+}
+
+.servicios h3 {
+  border-top: #800000 2px solid;
+  color: rgb(77, 83, 97);
+  margin: auto;
+  margin-top: 25px;
+  padding-top: 25px;
+  width: 50%;
+}
+.servicios p {
+  padding: 15px;
+}
+
+.serviciosicon {
+  display: block;
+  text-align: center;
+}
+.serviciosicon i {
+  font-size: 110px;
+  color: #800000;
+}
+
+.nuestrosproductos h3 {
+  border-top: #800000 2px solid;
+  color: rgb(77, 83, 97);
+  margin: auto;
+  margin-top: 25px;
+  padding-top: 25px;
+  width: 50%;
+}
+
+.productosimg {
+  width: 90%;
+  display: block;
+  text-align: center;
+  margin: auto;
+  position: relative;
+}
+.productosimg img {
+  width: 85%;
+  margin-top: 25px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  filter: brightness(0.5);
+}
+.productosimg h4 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  margin-top: 150px;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  text-shadow: 2px 2px 4px black;
+}
+.productosimg h4:hover {
+  transform: scale(1.2);
+}
+
+.dondeestamos h3 {
+  border-top: #800000 2px solid;
+  color: rgb(77, 83, 97);
+  margin: auto;
+  margin-top: 25px;
+  padding-top: 25px;
+  width: 50%;
+}
+.dondeestamos p {
+  padding: 15px;
+}
+.dondeestamos .ubicacion {
+  width: 100%;
+  text-align: center;
+}
+.dondeestamos .ubicacion img {
+  width: 80%;
+  margin-bottom: 25px;
+}
+
+footer {
+  height: 610px;
+  margin-top: 30px;
+  background-color: rgba(77, 83, 97, 0.151);
+}
+
+.productosfooter {
+  text-align: center;
+}
+.productosfooter h4 {
+  padding-top: 25px;
+  padding-bottom: 5px;
+  color: rgb(11, 0, 0);
+  border-bottom: #800000 2px solid;
+  width: 50%;
+  margin: auto;
+}
+.productosfooter a {
+  text-decoration: none;
+  color: #800000;
+}
+.productosfooter p {
+  margin-top: 15px;
+}
+
+.horariosfooter {
+  text-align: center;
+}
+.horariosfooter h4 {
+  padding-top: 25px;
+  padding-bottom: 5px;
+  color: rgb(11, 0, 0);
+  border-bottom: #800000 2px solid;
+  width: 50%;
+  margin: auto;
+}
+.horariosfooter a {
+  text-decoration: none;
+  color: #800000;
+}
+.horariosfooter p {
+  margin-top: 15px;
+  padding: 10px;
+}
+
+.contactofooter {
+  text-align: center;
+  display: block;
+}
+.contactofooter h4 {
+  padding-top: 25px;
+  padding-bottom: 5px;
+  color: rgb(11, 0, 0);
+  border-bottom: #800000 2px solid;
+  width: 50%;
+  margin: auto;
+}
+.contactofooter a {
+  text-decoration: none;
+  color: #800000;
+}
+.contactofooter p {
+  margin-top: 10px;
+  padding: 10px;
+}
+.contactofooter i {
+  color: #800000;
+}
+.contactofooter .direccion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.contactofooter .email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+}
+
+.derechos {
+  background-color: rgba(77, 83, 97, 0.211);
+  margin-top: 35px;
+  font-size: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.panaderiaportada {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.panaderiaportada img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.panaderiaportada h1 {
+  position: absolute;
+  top: 25%;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  margin-left: 150px;
+  font-size: 55px;
+  text-shadow: 2px 2px 2px black;
+}
+.panaderiaportada p {
+  padding: 15px;
+}
+
+.imagenespanaderia {
+  width: 100%;
+  text-align: center;
+}
+.imagenespanaderia img {
+  width: 90%;
+  height: 350px;
+  margin-top: 10px;
+  object-fit: cover;
+}
+
+.contactoportada {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.contactoportada img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.contactoportada h1 {
+  position: absolute;
+  top: 45%;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  margin-left: 50px;
+  font-size: 55px;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px black;
+}
+.contactoportada p {
+  padding: 15px;
+}
+
+.formulariocontacto {
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.formulariocontacto form {
+  background-color: rgba(77, 83, 97, 0.318);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  width: 340px;
+  padding: 20px;
+}
+.formulariocontacto form .input-group {
+  flex-direction: column;
+  text-align: left;
+  display: flex;
+}
+.formulariocontacto form .input-group label {
+  color: rgb(72, 73, 79);
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.formulariocontacto form .input-group input, .formulariocontacto form .input-group textarea {
+  width: 300px;
+  padding: 10px 15px;
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+}
+
+.btn {
+  margin-top: 10px;
+  background-color: rgba(11, 128, 13, 0.705);
+  width: 130px;
+  color: white;
+}
+.btn:hover {
+  background-color: rgba(16, 110, 33, 0.426);
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/*# sourceMappingURL=styles.css.map */
