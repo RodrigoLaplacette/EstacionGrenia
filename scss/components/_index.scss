@@ -1,8 +1,6 @@
 .portada {
     width:100%;
     text-align: center;
-
-
     img{
         width: 100%;
     }
@@ -16,9 +14,11 @@
         margin-top: 25px;
         padding-top: 25px;
         width: 50%;
+        text-align: center;
     }
 
     p{
+        width: 100%;
         padding: 15px;
     }
 }
@@ -28,7 +28,7 @@
     margin: auto;
     text-align: center;;
         img{
-            width: 90%;
+            width: 100%;
             margin-top: 10px;
         }
     }
@@ -42,6 +42,7 @@
         margin-top: 25px;
         padding-top: 25px;
         width: 50%;
+        text-align: center;
     }
     p{
         padding: 15px;
@@ -65,6 +66,7 @@
         margin-top: 25px;
         padding-top: 25px;
         width: 50%;
+        text-align: center;
     }
 }
 
@@ -119,5 +121,9 @@
         margin-bottom: 25px;
     }
 }
+}
 
+.mapa{
+    width: 100%;
+    text-align: center;
 }
