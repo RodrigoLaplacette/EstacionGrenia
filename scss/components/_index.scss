@@ -7,6 +7,7 @@
 }
 
 .nosotros{
+    text-align: center;
     h2{
         border-top: #800000 2px solid ;
         color: rgb(77, 83, 97);
@@ -35,17 +36,19 @@
 
 
 .servicios{
+    text-align: center;
     h3{
         border-top: #800000 2px solid ;
         color: rgb(77, 83, 97);
         margin: auto;
         margin-top: 25px;
+        margin-bottom: 25px;
         padding-top: 25px;
         width: 50%;
         text-align: center;
     }
     p{
-        padding: 15px;
+        padding: 10px;
     }
 }
 
@@ -100,6 +103,7 @@
 }
 
 .dondeestamos{
+    text-align: center;
     h3{
         border-top: #800000 2px solid ;
         color: rgb(77, 83, 97);
@@ -107,6 +111,7 @@
         margin-top: 25px;
         padding-top: 25px;
         width: 50%;
+        text-align: center;
     }
     p{
         padding: 15px;
@@ -126,4 +131,130 @@
 .mapa{
     width: 100%;
     text-align: center;
+}
+
+
+@media(min-width:769px){
+
+    .portada {
+        width:100%;
+        height: 500px;
+        text-align: center;
+        background-image: url(../img/masamadre3.png);
+        background-size:cover;
+        background-position:0px;
+        img{
+            display: none;
+        }
+    }
+.nosotroscontainer{
+    margin-top: 90px;
+    display: flex;
+    .nosotros{
+        display: block;
+        width: 50%;
+        p{
+            width: 80%;
+            text-align: center;
+            align-items: center;
+            margin: auto;
+        }
+        h2{
+            width: 60%;
+        }
+    }
+    .nosotrosimg{
+        width: 35%;
+        margin-left: 50px;
+        }
+    }
+
+.servicios{
+    margin-top: 80px;
+    .textoservicios{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        padding-left: 200px;
+        padding-right: 200px;
+        margin: 0;
+    }
+        p{
+            text-align: center;
+            align-items: center;
+        }
+    }
+    
+    .serviciosicon{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        .eventos{
+            width: 150px;
+        }
+    }
+
+    .nuestrosproductos {
+        position: relative;
+    }
+    
+    .productosimg{
+        a{
+            text-decoration: none;
+        }
+        display: flex;
+        width: 100%;
+        position: relative;
+        img{
+            width: 92%;
+        }
+    }
+
+        .panaderia,.pasteleria,.salado,.dulce{
+            display: block;
+            position: relative;
+            h4{
+                margin-top: 65px;
+                
+            }
+        }
+
+        .dondeestamos{
+            margin-top: 90px;
+            display: flex;
+            flex-direction: row-reverse;
+            .textoubicacion{
+                width: 100%;
+                text-align: center;
+                padding-right: 90px;
+            }
+            h3{
+                margin: auto;
+                margin-top: 25px;
+                padding-top: 25px;
+                width: 50%;
+                text-align: center;
+            }
+        
+            .ubicacion{
+                width: 100%;
+                text-align: center;
+        
+            img{
+                width:60%;
+            }
+        }
+    }
+
+    .mapa{
+        iframe{
+            width: 70%;
+        }
+    }
+
+
+
+
+
 }

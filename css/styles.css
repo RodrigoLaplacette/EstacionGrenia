@@ -20,8 +20,11 @@ header {
 }
 .instagramicon a {
   text-decoration: none;
-  color: rgba(245, 238, 238, 0.3764705882);
+  color: rgb(141, 142, 143);
   font-size: 20px;
+}
+.instagramicon a:hover {
+  color: rgb(242, 226, 123);
 }
 
 .logocontainer {
@@ -65,9 +68,10 @@ header {
   color: rgb(77, 83, 97);
   padding: 25px;
   font-size: 15px;
+  transition: 0.5s;
 }
 .menu ul li a:hover {
-  color: rgb(24, 193, 38);
+  color: rgb(242, 226, 123);
 }
 
 .menu.activo {
@@ -89,6 +93,45 @@ header {
   display: none;
 }
 
+@media (min-width: 769px) {
+  .instagramicon {
+    margin-left: 78px;
+    margin-top: 15px;
+  }
+  .instagramicon a {
+    font-size: 25px;
+  }
+  .menunav {
+    margin-top: 0;
+    display: flex;
+    width: auto;
+    position: relative;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-left: 85px;
+  }
+  .menu ul {
+    margin-left: 5%;
+    padding: 10px;
+    background-color: transparent;
+    display: flex;
+    box-shadow: none;
+  }
+  .menu ul li {
+    padding: 5px;
+  }
+  .menu ul li a {
+    color: rgb(255, 255, 255);
+  }
+  .abrir-menu {
+    display: none;
+    position: absolute;
+  }
+}
 .portada {
   width: 100%;
   text-align: center;
@@ -97,6 +140,9 @@ header {
   width: 100%;
 }
 
+.nosotros {
+  text-align: center;
+}
 .nosotros h2 {
   border-top: #800000 2px solid;
   color: rgb(77, 83, 97);
@@ -121,17 +167,21 @@ header {
   margin-top: 10px;
 }
 
+.servicios {
+  text-align: center;
+}
 .servicios h3 {
   border-top: #800000 2px solid;
   color: rgb(77, 83, 97);
   margin: auto;
   margin-top: 25px;
+  margin-bottom: 25px;
   padding-top: 25px;
   width: 50%;
   text-align: center;
 }
 .servicios p {
-  padding: 15px;
+  padding: 10px;
 }
 
 .serviciosicon {
@@ -182,6 +232,9 @@ header {
   transform: scale(1.2);
 }
 
+.dondeestamos {
+  text-align: center;
+}
 .dondeestamos h3 {
   border-top: #800000 2px solid;
   color: rgb(77, 83, 97);
@@ -189,6 +242,7 @@ header {
   margin-top: 25px;
   padding-top: 25px;
   width: 50%;
+  text-align: center;
 }
 .dondeestamos p {
   padding: 15px;
@@ -207,6 +261,112 @@ header {
   text-align: center;
 }
 
+@media (min-width: 769px) {
+  .portada {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    background-image: url(../img/masamadre3.png);
+    background-size: cover;
+    background-position: 0px;
+  }
+  .portada img {
+    display: none;
+  }
+  .nosotroscontainer {
+    margin-top: 90px;
+    display: flex;
+  }
+  .nosotroscontainer .nosotros {
+    display: block;
+    width: 50%;
+  }
+  .nosotroscontainer .nosotros p {
+    width: 80%;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+  }
+  .nosotroscontainer .nosotros h2 {
+    width: 60%;
+  }
+  .nosotroscontainer .nosotrosimg {
+    width: 35%;
+    margin-left: 50px;
+  }
+  .servicios {
+    margin-top: 80px;
+  }
+  .servicios .textoservicios {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin: 0;
+  }
+  .servicios p {
+    text-align: center;
+    align-items: center;
+  }
+  .serviciosicon {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .serviciosicon .eventos {
+    width: 150px;
+  }
+  .nuestrosproductos {
+    position: relative;
+  }
+  .productosimg {
+    display: flex;
+    width: 100%;
+    position: relative;
+  }
+  .productosimg a {
+    text-decoration: none;
+  }
+  .productosimg img {
+    width: 92%;
+  }
+  .panaderia, .pasteleria, .salado, .dulce {
+    display: block;
+    position: relative;
+  }
+  .panaderia h4, .pasteleria h4, .salado h4, .dulce h4 {
+    margin-top: 65px;
+  }
+  .dondeestamos {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .dondeestamos .textoubicacion {
+    width: 100%;
+    text-align: center;
+    padding-right: 90px;
+  }
+  .dondeestamos h3 {
+    margin: auto;
+    margin-top: 25px;
+    padding-top: 25px;
+    width: 50%;
+    text-align: center;
+  }
+  .dondeestamos .ubicacion {
+    width: 100%;
+    text-align: center;
+  }
+  .dondeestamos .ubicacion img {
+    width: 60%;
+  }
+  .mapa iframe {
+    width: 70%;
+  }
+}
 footer {
   height: 610px;
   margin-top: 30px;
@@ -290,12 +450,18 @@ footer {
 
 .derechos {
   background-color: rgba(77, 83, 97, 0.211);
-  margin-top: 35px;
   font-size: 10px;
   padding: 10px;
   text-align: center;
 }
 
+@media (min-width: 769px) {
+  footer {
+    height: 280px;
+    display: flex;
+    justify-content: space-around;
+  }
+}
 .panaderiaportada {
   width: 100%;
   overflow: hidden;
@@ -330,6 +496,45 @@ footer {
   object-fit: cover;
 }
 
+@media (min-width: 769px) {
+  .panaderiaportada {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  .panaderiaportada img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  .panaderiaportada h1 {
+    position: absolute;
+    top: 25%;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    margin-left: 20%;
+    font-size: 55px;
+    text-shadow: 2px 2px 2px black;
+  }
+  .panaderiaportada p {
+    text-align: center;
+    padding: 15px;
+  }
+  .imagenespanaderia {
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+  }
+  .imagenespanaderia img {
+    width: 400px;
+    margin-top: 10px;
+  }
+  .imagenespanaderia img:hover {
+    transform: scale(1.1);
+    transition: 1.8s;
+    border-radius: 20px;
+  }
+}
 .contactoportada {
   width: 100%;
   overflow: hidden;
@@ -351,6 +556,7 @@ footer {
   text-shadow: 2px 2px 2px black;
 }
 .contactoportada p {
+  text-align: center;
   padding: 15px;
 }
 
@@ -390,14 +596,33 @@ footer {
 
 .btn {
   margin-top: 10px;
-  background-color: rgba(11, 128, 13, 0.705);
+  background-color: rgb(242, 226, 123);
   width: 130px;
   color: white;
+  transition: 0.5s;
 }
 .btn:hover {
-  background-color: rgba(16, 110, 33, 0.426);
+  background-color: rgba(242, 226, 123, 0.57);
 }
 
+@media (min-width: 769px) {
+  .contactoportada p {
+    font-size: 20px;
+  }
+  .formulariocontacto form {
+    width: 840px;
+  }
+  .formulariocontacto form .input-group {
+    align-items: center;
+  }
+  .formulariocontacto form .input-group input, .formulariocontacto form .input-group textarea {
+    width: 500px;
+  }
+  .btn {
+    background-color: rgb(221, 111, 21);
+    width: 230px;
+  }
+}
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }

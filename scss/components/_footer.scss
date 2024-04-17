@@ -89,8 +89,18 @@ footer{
 
 .derechos{
     background-color: rgba(77, 83, 97, 0.211);
-    margin-top: 35px;
     font-size: 10px;
     padding: 10px;
     text-align: center;
 }
+
+ //responsive
+@media(min-width:769px){
+
+    footer{
+        height: 280px;
+        display: flex;
+        justify-content: space-around;
+    }
+    }
+
